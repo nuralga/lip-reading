@@ -73,6 +73,7 @@ def process_images_in_folder(input_folder_path):
         if filename.endswith(('.png', '.jpg', '.jpeg')):  # 画像の拡張子を指定
             # 画像のフルパスを作成
             image_path = os.path.join(input_folder_path, filename)
+            print(image_path)
             
             # try:
                 # 画像を読み込む
@@ -85,7 +86,7 @@ def process_images_in_folder(input_folder_path):
                 continue
             
             # 画像処理関数を呼び出す
-            processed_image, predict_result = LFROI_extraction(image_cv)
+            processed_image, is_detect = LFROI_extraction(image_cv)
 
 
 
