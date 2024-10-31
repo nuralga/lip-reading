@@ -90,7 +90,7 @@ def process_images_in_folder(input_folder_path):
 
 
 # 使用例
-input_folder_path = 'frame'  # 処理する画像フォルダのパス
+input_folder_path = 'word_frame'  # 処理する画像フォルダのパス
 # output_folder_path = 'processed_images_1'  # 出力フォルダのパス
 
 # text_file_path = 'label.txt'  # テキストファイルのパス
